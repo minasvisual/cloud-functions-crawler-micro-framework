@@ -1,0 +1,5 @@
+node_modules
+tmp
+models/*
+!models/advanced.js
+!models/example.js

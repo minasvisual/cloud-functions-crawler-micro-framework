@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "deploy": "gcloud beta functions deploy screenshot --trigger-http --runtime nodejs8 --memory 1024MB"
+    "deploy": "gcloud functions deploy crawler --trigger-http --runtime nodejs10 --memory 1024MB"
   },
-  "dependencies": { 
+  "dependencies": {
+    "axios": "^0.21.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
     "puppeteer": "^1.6.2"
   }
 }
